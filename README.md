@@ -30,3 +30,7 @@ kubectl --namespace crossplane-system \
     --dry-run=client \
     | kubeseal --format yaml \
     | tee crossplane-configs/aws-creds.yaml
+
+kubectl apply --filename project.yaml
+
+kubectl apply --filename apps.yaml
