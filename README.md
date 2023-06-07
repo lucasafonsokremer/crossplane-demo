@@ -36,3 +36,9 @@ kubectl apply --filename project.yaml
 kubectl apply --filename apps.yaml
 
 kubectl port-forward service/argocd-server -n argocd 8080:443
+
+cat examples/cluster.yaml
+
+cp examples/cluster.yaml team-a
+
+kubectl get clusters,nodegroup,iamroles,iamrolepolicyattachments,vpcs,securitygroups,subnets,internetgateways,routetables,providerconfigs.helm.crossplane.io,releases
