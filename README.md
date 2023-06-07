@@ -34,3 +34,5 @@ kubectl --namespace crossplane-system \
 kubectl apply --filename project.yaml
 
 kubectl apply --filename apps.yaml
+
+kubectl port-forward service/argocd-server -n argocd 8080:443
