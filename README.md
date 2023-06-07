@@ -42,3 +42,5 @@ cat examples/cluster.yaml
 cp examples/cluster.yaml team-a
 
 kubectl get clusters,nodegroup,iamroles,iamrolepolicyattachments,vpcs,securitygroups,subnets,internetgateways,routetables,providerconfigs.helm.crossplane.io,releases
+
+cp examples/my-app.yaml team-a-apps/
